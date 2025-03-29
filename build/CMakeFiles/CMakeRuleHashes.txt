@@ -1,4 +1,0 @@
-# Hashes of file build rules.
-de218976c4969b932139b3c25be4a23d plugin/Render_artefacts/JuceLibraryCode/Render_AU/PkgInfo
-3b0146c5eda440823323677703812008 plugin/Render_artefacts/JuceLibraryCode/Render_Standalone/PkgInfo
-61097accd84a449251a2921afb12d676 plugin/Render_artefacts/JuceLibraryCode/Render_VST3/PkgInfo
