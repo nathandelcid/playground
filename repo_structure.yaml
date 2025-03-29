@@ -1,0 +1,810 @@
+  - path: /CMakeLists.txt
+    type: file
+  - path: /plugin
+    type: directory
+    contents:
+    - path: /plugin/CMakeLists.txt
+      type: file
+    - path: /plugin/include
+      type: directory
+      contents:
+      - path: /plugin/include/Render
+        type: directory
+        contents:
+        - path: /plugin/include/Render/PluginEditor.h
+          type: file
+        - path: /plugin/include/Render/PluginProcessor.h
+          type: file
+        - path: /plugin/include/Render/Render.h
+          type: file
+    - path: /plugin/src
+      type: directory
+      contents:
+      - path: /plugin/src/Render.cpp
+        type: file
+      - path: /plugin/src/PluginProcessor.cpp
+        type: file
+      - path: /plugin/src/PluginEditor.cpp
+        type: file
+      - path: /plugin/src/main.cpp
+        type: file
+  - path: /libs
+    type: directory
+    contents:
+    - path: /libs/juce
+      type: directory
+      contents:
+      - path: /libs/juce/CODE_OF_CONDUCT.md
+        type: file
+      - path: /libs/juce/LICENSE.md
+        type: file
+      - path: /libs/juce/CMakeLists.txt
+        type: file
+      - path: /libs/juce/BREAKING_CHANGES.md
+        type: file
+      - path: /libs/juce/docs
+        type: directory
+        contents:
+        - path: /libs/juce/docs/Accessibility.md∆
+          type: file
+        - path: /libs/juce/docs/JUCE Module Format.md
+          type: file
+        - path: /libs/juce/docs/README.md
+          type: file
+        - path: /libs/juce/docs/ARA.md
+          type: file
+        - path: /libs/juce/docs/doxygen
+          type: directory
+          contents:
+          - path: /libs/juce/docs/doxygen/Makefile
+            type: file
+          - path: /libs/juce/docs/doxygen/make.bat
+            type: file
+          - path: /libs/juce/docs/doxygen/process_source_files.py
+            type: file
+          - path: /libs/juce/docs/doxygen/Doxyfile
+            type: file
+        - path: /libs/juce/docs/Linux Dependencies.md
+          type: file
+        - path: /libs/juce/docs/CMake API.md
+          type: file
+      - path: /libs/juce/README.md
+        type: file
+      - path: /libs/juce/examples
+        type: directory
+        contents:
+        - path: /libs/juce/examples/CMakeLists.txt
+          type: file
+        - path: /libs/juce/examples/CMake
+          type: directory
+          contents:
+          - path: /libs/juce/examples/CMake/CMakeLists.txt
+            type: file
+          - path: /libs/juce/examples/CMake/ConsoleApp
+            type: directory
+            contents:
+            - path: /libs/juce/examples/CMake/ConsoleApp/CMakeLists.txt
+              type: file
+            - path: /libs/juce/examples/CMake/ConsoleApp/Main.cpp
+              type: file
+          - path: /libs/juce/examples/CMake/GuiApp
+            type: directory
+            contents:
+            - path: /libs/juce/examples/CMake/GuiApp/CMakeLists.txt
+              type: file
+            - path: /libs/juce/examples/CMake/GuiApp/MainComponent.h
+              type: file
+            - path: /libs/juce/examples/CMake/GuiApp/MainComponent.cpp
+              type: file
+            - path: /libs/juce/examples/CMake/GuiApp/Main.cpp
+              type: file
+          - path: /libs/juce/examples/CMake/AudioPlugin
+            type: directory
+            contents:
+            - path: /libs/juce/examples/CMake/AudioPlugin/CMakeLists.txt
+              type: file
+            - path: /libs/juce/examples/CMake/AudioPlugin/PluginEditor.h
+              type: file
+            - path: /libs/juce/examples/CMake/AudioPlugin/PluginProcessor.h
+              type: file
+            - path: /libs/juce/examples/CMake/AudioPlugin/PluginProcessor.cpp
+              type: file
+            - path: /libs/juce/examples/CMake/AudioPlugin/PluginEditor.cpp
+              type: file
+        - path: /libs/juce/examples/Plugins
+          type: directory
+          contents:
+          - path: /libs/juce/examples/Plugins/ArpeggiatorPluginDemo.h
+            type: file
+          - path: /libs/juce/examples/Plugins/AudioPluginDemo.h
+            type: file
+          - path: /libs/juce/examples/Plugins/CMakeLists.txt
+            type: file
+          - path: /libs/juce/examples/Plugins/AUv3SynthPluginDemo.h
+            type: file
+          - path: /libs/juce/examples/Plugins/HostPluginDemo.h
+            type: file
+          - path: /libs/juce/examples/Plugins/SurroundPluginDemo.h
+            type: file
+          - path: /libs/juce/examples/Plugins/SamplerPluginDemo.h
+            type: file
+          - path: /libs/juce/examples/Plugins/ARAPluginDemo.h
+            type: file
+          - path: /libs/juce/examples/Plugins/MidiLoggerPluginDemo.h
+            type: file
+          - path: /libs/juce/examples/Plugins/MultiOutSynthPluginDemo.h
+            type: file
+          - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI
+            type: directory
+            contents:
+            - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/README.md
+              type: file
+            - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/public
+              type: directory
+              contents:
+              - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/public/favicon.ico
+                type: file
+              - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/public/index.html
+                type: file
+              - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/public/manifest.json
+                type: file
+              - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/public/robots.txt
+                type: file
+            - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/package-lock.json
+              type: file
+            - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/package.json
+              type: file
+            - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/src
+              type: directory
+              contents:
+              - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/src/reportWebVitals.js
+                type: file
+              - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/src/App.css
+                type: file
+              - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/src/index.js
+                type: file
+              - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/src/index.css
+                type: file
+              - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/src/App.test.js
+                type: file
+              - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/src/setupTests.js
+                type: file
+              - path: /libs/juce/examples/Plugins/WebViewPluginDemoGUI/src/App.js
+                type: file
+          - path: /libs/juce/examples/Plugins/GainPluginDemo.h
+            type: file
+          - path: /libs/juce/examples/Plugins/DSPModulePluginDemo.h
+            type: file
+          - path: /libs/juce/examples/Plugins/WebViewPluginDemo.h
+            type: file
+          - path: /libs/juce/examples/Plugins/NoiseGatePluginDemo.h
+            type: file
+          - path: /libs/juce/examples/Plugins/extern
+            type: directory
+            contents:
+            - path: /libs/juce/examples/Plugins/extern/LICENSE.md
+              type: file
+            - path: /libs/juce/examples/Plugins/extern/reaper_plugin_fx_embed.h
+              type: file
+            - path: /libs/juce/examples/Plugins/extern/reaper_vst3_interfaces.h
+              type: file
+          - path: /libs/juce/examples/Plugins/ReaperEmbeddedViewPluginDemo.h
+            type: file
+        - path: /libs/juce/examples/Utilities
+          type: directory
+          contents:
+          - path: /libs/juce/examples/Utilities/OSCDemo.h
+            type: file
+        - path: /libs/juce/examples/Audio
+          type: directory
+          contents:
+          - path: /libs/juce/examples/Audio/PluckedStringsDemo.h
+            type: file
+          - path: /libs/juce/examples/Audio/MidiDemo.h
+            type: file
+          - path: /libs/juce/examples/Audio/CMakeLists.txt
+            type: file
+          - path: /libs/juce/examples/Audio/AudioWorkgroupDemo.h
+            type: file
+          - path: /libs/juce/examples/Audio/AudioSynthesiserDemo.h
+            type: file
+          - path: /libs/juce/examples/Audio/AudioLatencyDemo.h
+            type: file
+          - path: /libs/juce/examples/Audio/AudioSettingsDemo.h
+            type: file
+          - path: /libs/juce/examples/Audio/CapabilityInquiryDemo.h
+            type: file
+          - path: /libs/juce/examples/Audio/AudioAppDemo.h
+            type: file
+          - path: /libs/juce/examples/Audio/SimpleFFTDemo.h
+            type: file
+          - path: /libs/juce/examples/Audio/AudioRecordingDemo.h
+            type: file
+          - path: /libs/juce/examples/Audio/AudioPlaybackDemo.h
+            type: file
+          - path: /libs/juce/examples/Audio/MPEDemo.h
+            type: file
+        - path: /libs/juce/examples/GUI
+          type: directory
+          contents:
+          - path: /libs/juce/examples/GUI/AnimationAppDemo.h
+            type: file
+          - path: /libs/juce/examples/GUI/MDIDemo.h
+            type: file
+          - path: /libs/juce/examples/GUI/HelloWorldDemo.h
+            type: file
+          - path: /libs/juce/examples/GUI/MenusDemo.h
+            type: file
+          - path: /libs/juce/examples/GUI/OpenGLDemo.h
+            type: file
+          - path: /libs/juce/examples/GUI/CodeEditorDemo.h
+            type: file
+          - path: /libs/juce/examples/GUI/CMakeLists.txt
+            type: file
+          - path: /libs/juce/examples/GUI/PropertiesDemo.h
+            type: file
+          - path: /libs/juce/examples/GUI/WebBrowserDemo.h
+            type: file
+          - path: /libs/juce/examples/GUI/LookAndFeelDemo.h
+            type: file
+        - path: /libs/juce/examples/DemoRunner
+          type: directory
+          contents:
+          - path: /libs/juce/examples/DemoRunner/CMakeLists.txt
+            type: file
+          - path: /libs/juce/examples/DemoRunner/DemoRunner.jucer
+            type: file
+          - path: /libs/juce/examples/DemoRunner/JuceLibraryCode
+            type: directory
+            contents:
+            - path: /libs/juce/examples/DemoRunner/JuceLibraryCode/include_juce_animation.cpp
+              type: file
+            - path: /libs/juce/examples/DemoRunner/JuceLibraryCode/include_juce_core.cpp
+              type: file
+            - path: /libs/juce/examples/DemoRunner/JuceLibraryCode/include_juce_audio_devices.mm
+              type: file
+            - path: /libs/juce/examples/DemoRunner/JuceLibraryCode/include_juce_audio_formats.cpp
+              type: file
+            - path: /libs/juce/examples/DemoRunner/JuceLibraryCode/include_juce_dsp.mm
+              type: file
+            - path: /libs/juce/examples/DemoRunner/JuceLibraryCode/JuceHeader.h
+              type: file
+            - path: /libs/juce/examples/DemoRunner/JuceLibraryCode/include_juce_audio_processors.mm
+              type: file
+            - path: /libs/juce/examples/DemoRunner/JuceLibraryCode/include_juce_cryptography.cpp
+              type: file
+            - path: /libs/juce/examples/DemoRunner/JuceLibraryCode/include_juce_video.cpp
+              type: file
+            - path: /libs/juce/examples/DemoRunner/JuceLibraryCode/include_juce_opengl.cpp
+              type: file
+          - path: /libs/juce/examples/DemoRunner/Source
+            type: directory
+            contents:
+            - path: /libs/juce/examples/DemoRunner/Source/UI
+              type: directory
+              contents:
+              - path: /libs/juce/examples/DemoRunner/Source/UI/DemoContentComponent.cpp
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Source/UI/SettingsContent.h
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Source/UI/MainComponent.h
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Source/UI/DemoContentComponent.h
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Source/UI/MainComponent.cpp
+                type: file
+            - path: /libs/juce/examples/DemoRunner/Source/accessibilitynotificationicon.png
+              type: file
+            - path: /libs/juce/examples/DemoRunner/Source/JUCEAppIcon.png
+              type: file
+            - path: /libs/juce/examples/DemoRunner/Source/Demos
+              type: directory
+              contents:
+              - path: /libs/juce/examples/DemoRunner/Source/Demos/DemoPIPs2.cpp
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Source/Demos/DemoPIPs1.cpp
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Source/Demos/IntroScreen.h
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Source/Demos/JUCEDemos.cpp
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Source/Demos/JUCEDemos.h
+                type: file
+            - path: /libs/juce/examples/DemoRunner/Source/Main.cpp
+              type: file
+          - path: /libs/juce/examples/DemoRunner/Builds
+            type: directory
+            contents:
+            - path: /libs/juce/examples/DemoRunner/Builds/LinuxMakefile
+              type: directory
+              contents:
+              - path: /libs/juce/examples/DemoRunner/Builds/LinuxMakefile/Makefile
+                type: file
+            - path: /libs/juce/examples/DemoRunner/Builds/VisualStudio2019
+              type: directory
+              contents:
+              - path: /libs/juce/examples/DemoRunner/Builds/VisualStudio2019/resources.rc
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/VisualStudio2019/DemoRunner.sln
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/VisualStudio2019/DemoRunner_App.vcxproj
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/VisualStudio2019/DemoRunner_App.vcxproj.filters
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/VisualStudio2019/icon.ico
+                type: file
+            - path: /libs/juce/examples/DemoRunner/Builds/iOS
+              type: directory
+              contents:
+              - path: /libs/juce/examples/DemoRunner/Builds/iOS/LaunchScreen.storyboard
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/iOS/Icon.icns
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/iOS/App.entitlements
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner
+                type: directory
+                contents:
+                - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets
+                  type: directory
+                  contents:
+                  - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset
+                    type: directory
+                    contents:
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-Small@2x-1.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-29.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-76@2x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-@3x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-83.5@2x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-AppStore-1024.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-Spotlight-40@3x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-29@2x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-76.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-Notifications-20.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-Small-1.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-Spotlight-40.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-Notifications-20@2x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-29@3x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-Spotlight-40@2x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-60@2x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-Spotlight-40@2x-1.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Contents.json
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-Notification-20@3x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/AppIcon.appiconset/Icon-Notification-20@2x.png
+                      type: file
+                  - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/LaunchImage.launchimage
+                    type: directory
+                    contents:
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/LaunchImage.launchimage/LaunchImage-iphone-2x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/LaunchImage.launchimage/LaunchImage-iphone-retina4.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/LaunchImage.launchimage/LaunchImage-ipad-portrait-1x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/LaunchImage.launchimage/LaunchImage-ipad-landscape-1x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/LaunchImage.launchimage/LaunchImage-ipad-landscape-2x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/LaunchImage.launchimage/LaunchImage-ipad-portrait-2x.png
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner/Images.xcassets/LaunchImage.launchimage/Contents.json
+                      type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner.xcodeproj
+                type: directory
+                contents:
+                - path: /libs/juce/examples/DemoRunner/Builds/iOS/DemoRunner.xcodeproj/project.pbxproj
+                  type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/iOS/Info-App.plist
+                type: file
+            - path: /libs/juce/examples/DemoRunner/Builds/MacOSX
+              type: directory
+              contents:
+              - path: /libs/juce/examples/DemoRunner/Builds/MacOSX/Icon.icns
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/MacOSX/DemoRunner.xcodeproj
+                type: directory
+                contents:
+                - path: /libs/juce/examples/DemoRunner/Builds/MacOSX/DemoRunner.xcodeproj/project.pbxproj
+                  type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/MacOSX/Info-App.plist
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/MacOSX/RecentFilesMenuTemplate.nib
+                type: file
+            - path: /libs/juce/examples/DemoRunner/Builds/Android
+              type: directory
+              contents:
+              - path: /libs/juce/examples/DemoRunner/Builds/Android/app
+                type: directory
+                contents:
+                - path: /libs/juce/examples/DemoRunner/Builds/Android/app/CMakeLists.txt
+                  type: file
+                - path: /libs/juce/examples/DemoRunner/Builds/Android/app/build.gradle
+                  type: file
+                - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src
+                  type: directory
+                  contents:
+                  - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/release
+                    type: directory
+                    contents:
+                    - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/release/res
+                      type: directory
+                      contents:
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/release/res/values
+                        type: directory
+                        contents:
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/release/res/values/string.xml
+                          type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/release/res/raw
+                        type: directory
+                        contents:
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/release/res/raw/accessibilitynotificationicon.png
+                          type: file
+                  - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main
+                    type: directory
+                    contents:
+                    - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/res
+                      type: directory
+                      contents:
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/res/drawable-xhdpi
+                        type: directory
+                        contents:
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/res/drawable-xhdpi/icon.png
+                          type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/res/drawable-hdpi
+                        type: directory
+                        contents:
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/res/drawable-hdpi/icon.png
+                          type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/res/drawable-ldpi
+                        type: directory
+                        contents:
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/res/drawable-ldpi/icon.png
+                          type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/res/drawable-mdpi
+                        type: directory
+                        contents:
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/res/drawable-mdpi/icon.png
+                          type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/AndroidManifest.xml
+                      type: file
+                    - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets
+                      type: directory
+                      contents:
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/ADSRComponent.h
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/DemoUtilities.h
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases
+                        type: directory
+                        contents:
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/icon.png
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Fabian2.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Fabian0.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Fabian1.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Ed0.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/JB.png
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Ed1.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Ed2.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Jules2.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Ed.png
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Jules1.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Jules0.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Lukasz2.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/JB0.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Robot.png
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/JB1.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Lukasz1.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/JB2.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Lukasz.png
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Lukasz0.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Jules.png
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Fabian.png
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Robot2.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Robot1.ogg
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Purchases/Robot0.ogg
+                          type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Signing
+                        type: directory
+                        contents:
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Signing/InAppPurchase.keystore
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Signing/README.txt
+                          type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/DSPDemos_Common.h
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/guitar_amp.wav
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/juce_icon_template.png
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/demo table data.xml
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests
+                        type: directory
+                        contents:
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Chain.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Confined.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/PolyCollision.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/EdgeTest.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/ApplyForce.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Gears.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/SliderCrank.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/ContinuousTest.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Revolute.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/TheoJansen.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Bridge.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/CollisionProcessing.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/DistanceTest.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/PolyShapes.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/TimeOfImpact.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Tiles.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/BulletTest.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Car.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/VaryingFriction.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Rope.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/SensorTest.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Pyramid.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/VaryingRestitution.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/RopeJoint.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/VerticalStack.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/CompoundShapes.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/CollisionFiltering.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Pulleys.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Breakable.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/BodyTypes.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/DumpShell.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/ShapeEditing.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/SphereStack.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/OneSidedPlatform.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/AddPair.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Pinball.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Tumbler.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/RayCast.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/EdgeShapes.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Prismatic.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/TestEntries.cpp
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Dominos.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Web.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/CharacterCollision.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/DynamicTreeTest.h
+                          type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Box2DTests/Cantilever.h
+                          type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/power.png
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/WavefrontObjParser.h
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/icons.zip
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/treedemo.xml
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/cello.wav
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/webviewplugin-gui-fallback.html
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/singing.ogg
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/juce_module_info
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/reverb_ir.wav
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/teapot.obj
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/portmeirion.jpg
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/AudioLiveScrollingDisplay.h
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/tile_background.png
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/google-services.json
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/juce_icon.png
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/cassette_recorder.wav
+                        type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications
+                        type: directory
+                        contents:
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/images
+                          type: directory
+                          contents:
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/images/ic_stat_name.png
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/images/ic_stat_name8.png
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/images/ic_stat_name9.png
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/images/ic_stat_name4.png
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/images/ic_stat_name5.png
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/images/ic_stat_name7.png
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/images/ic_stat_name6.png
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/images/ic_stat_name2.png
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/images/ic_stat_name10.png
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/images/ic_stat_name3.png
+                            type: file
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/sounds
+                          type: directory
+                          contents:
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/sounds/isntit.mp3
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/sounds/served.caf
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/sounds/jinglebellssms.mp3
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/sounds/demonstrative.mp3
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/sounds/solemn.mp3
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/sounds/isntit.caf
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/sounds/jinglebellssms.caf
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/sounds/solemn.caf
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/sounds/demonstrative.caf
+                            type: file
+                          - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/Notifications/sounds/served.mp3
+                            type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/main/assets/proaudio.path
+                        type: file
+                  - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/debug
+                    type: directory
+                    contents:
+                    - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/debug/res
+                      type: directory
+                      contents:
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/debug/res/values
+                        type: directory
+                        contents:
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/debug/res/values/string.xml
+                          type: file
+                      - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/debug/res/raw
+                        type: directory
+                        contents:
+                        - path: /libs/juce/examples/DemoRunner/Builds/Android/app/src/debug/res/raw/accessibilitynotificationicon.png
+                          type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/Android/gradle
+                type: directory
+                contents:
+                - path: /libs/juce/examples/DemoRunner/Builds/Android/gradle/wrapper
+                  type: directory
+                  contents:
+                  - path: /libs/juce/examples/DemoRunner/Builds/Android/gradle/wrapper/LICENSE-for-gradlewrapper.txt
+                    type: file
+                  - path: /libs/juce/examples/DemoRunner/Builds/Android/gradle/wrapper/gradle-wrapper.jar
+                    type: file
+                  - path: /libs/juce/examples/DemoRunner/Builds/Android/gradle/wrapper/gradle-wrapper.properties
+                    type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/Android/gradlew
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/Android/build.gradle
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/Android/gradle.properties
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/Android/gradlew.bat
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/Android/settings.gradle
+                type: file
+            - path: /libs/juce/examples/DemoRunner/Builds/VisualStudio2022
+              type: directory
+              contents:
+              - path: /libs/juce/examples/DemoRunner/Builds/VisualStudio2022/resources.rc
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/VisualStudio2022/DemoRunner.sln
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/VisualStudio2022/DemoRunner_App.vcxproj
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/VisualStudio2022/DemoRunner_App.vcxproj.filters
+                type: file
+              - path: /libs/juce/examples/DemoRunner/Builds/VisualStudio2022/icon.ico
+                type: file
+        - path: /libs/juce/examples/Assets
+          type: directory
+          contents:
+          - path: /libs/juce/examples/Assets/ADSRComponent.h
+            type: file
+          - path: /libs/juce/examples/Assets/DemoUtilities.h
+            type: file
+          - path: /libs/juce/examples/Assets/Purchases
+            type: directory
+            contents:
+            - path: /libs/juce/examples/Assets/Purchases/icon.png
+              type: file
+            - path: /libs/juce/examples/Assets/Purchases/Fabian2.ogg
+              type: file
+            - path: /libs/juce/examples/Assets/Purchases/Fabian0.ogg
+              type: file
+            - path: /libs/juce/examples/Assets/Purchases/Fabian1.ogg
+              type: file
